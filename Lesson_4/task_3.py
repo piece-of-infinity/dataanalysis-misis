@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('/Users/snezana/misis_data_analysis/dataanalysis-misis/All_Files/group_orders.csv')
+df = pd.read_csv('../All_Files/group_orders.csv')
 
 total_quantity = df.groupby('product')['quantity'].sum().reset_index()
 total_quantity = total_quantity.sort_values(by='quantity', ascending=False).head(1)

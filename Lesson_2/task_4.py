@@ -1,6 +1,6 @@
 import pandas as pd
 
-customers = pd.read_csv('/Users/snezana/misis_data_analysis/dataanalysis-misis/All_Files/customers.csv',
+customers = pd.read_csv('../All_Files/customers.csv',
                        parse_dates=['birth_date'])
 
 women_before_1995 = customers[

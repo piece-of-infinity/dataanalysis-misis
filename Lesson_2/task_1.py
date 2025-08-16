@@ -1,6 +1,6 @@
 import pandas as pd
 
-orders = pd.read_csv('/Users/snezana/misis_data_analysis/dataanalysis-misis/All_Files/orders.csv', parse_dates=['order_date'])
+orders = pd.read_csv('../All_Files/orders.csv', parse_dates=['order_date'])
 
 filtered_orders = orders[
     (orders['total'].between(30000, 40000)) & 

@@ -1,7 +1,7 @@
 import pandas as pd
 
-orders = pd.read_csv('/Users/snezana/misis_data_analysis/dataanalysis-misis/All_Files/orders.csv')
-customers = pd.read_csv('/Users/snezana/misis_data_analysis/dataanalysis-misis/All_Files/customers.csv',
+orders = pd.read_csv('../All_Files/orders.csv')
+customers = pd.read_csv('../All_Files/customers.csv',
                        parse_dates=['birth_date'])
 
 merged = customers.merge(orders, on='customer_id')

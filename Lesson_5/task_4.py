@@ -1,7 +1,7 @@
 import pandas as pd
 
-users = pd.read_csv('/Users/snezana/misis_data_analysis/dataanalysis-misis/All_Files/users_new.csv')
-orders = pd.read_csv('/Users/snezana/misis_data_analysis/dataanalysis-misis/All_Files/orders_new.csv')
+users = pd.read_csv('../All_Files/users_new.csv')
+orders = pd.read_csv('../All_Files/orders_new.csv')
 
 merged = orders.merge(users, on='user_id', how='left')
 

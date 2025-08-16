@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('/Users/snezana/misis_data_analysis/dataanalysis-misis/All_Files/group_orders.csv')
+df = pd.read_csv('../All_Files/group_orders.csv')
 
 df['order_date'] = pd.to_datetime(df['order_date'])
 

@@ -1,7 +1,7 @@
 import pandas as pd
 
-orders = pd.read_csv('/Users/snezana/misis_data_analysis/dataanalysis-misis/All_Files/orders_new.csv')
-users = pd.read_csv('/Users/snezana/misis_data_analysis/dataanalysis-misis/All_Files/users_new.csv')
+orders = pd.read_csv('../All_Files/orders_new.csv')
+users = pd.read_csv('../All_Files/users_new.csv')
 
 order_counts = orders.groupby('user_id')['order_id'].nunique().reset_index(name='orders_count')
 

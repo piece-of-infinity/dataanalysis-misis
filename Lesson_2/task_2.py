@@ -1,8 +1,8 @@
 import pandas as pd
 
 def main():
-    orders_path = '/Users/snezana/misis_data_analysis/dataanalysis-misis/All_Files/orders.csv'
-    customers_path = '/Users/snezana/misis_data_analysis/dataanalysis-misis/All_Files/customers.csv'
+    orders_path = '../All_Files/orders.csv'
+    customers_path = '../All_Files/customers.csv'
     
     try:
         orders = pd.read_csv(orders_path, parse_dates=['order_date'])
